@@ -1,0 +1,652 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e8eef1;
+    height: auto;
+    width: 100%;
+}
+
+nav{
+    list-style: none;
+    /* border: 2px solid red; */
+    /* border-radius: 8px; */
+    width: 100%;
+    background-color: #4258FF;
+    padding: 0;
+    margin: 0;
+
+    li{
+        border: 1px solid black;
+        width: 100%;
+    }
+}
+
+#main-nav{
+    width: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    padding: 2em;
+    /* border: 1px solid red; */
+}
+
+#img-hero{
+    width: 400px;
+    height: auto;
+    border-radius: 16px;
+    margin: 1em;
+}
+
+button{
+    border-radius: 50px;
+}
+
+.has-shadow{
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#signup{
+    border: 1px solid hsl(171, 100%, 41%);
+}
+
+/* Section 1.1 */
+#section-1-1{
+    /* border: 1px solid red; */
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
+    background-color: #4258FF;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    /* border-radius: 8px; */
+
+    #view-more-btn-container{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .more-btn{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5em 1em;
+        margin-top: 1em;
+
+        p{
+            margin: 0em 0.5em;
+            font-weight: 700;
+           
+        }
+
+    }
+
+    .more-content {
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        /* border: 1px solid red; */
+        margin: 0em 0em 0em 0em;
+        padding: 0em 0em 0em 0em;
+        transition: max-height 0.5s ease, opacity 0.5s ease;
+      }
+      
+      .more-content.show {
+        max-height: 500px; /* Set to an appropriate max height */
+        opacity: 1;
+        transition: max-height 0.5s ease, opacity 0.5s ease;
+      }
+
+      #fact-points-nav{
+        padding: 1em 1em;
+
+        li{
+            margin: 0.5em 0em;
+            width: max-content;
+        }
+
+        li svg{
+            margin: 0em 0.5em;
+        }
+
+        li a{
+            color: #fff;
+        }
+
+        li:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+
+      
+}
+
+/* Section 1 */
+#section-1{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+
+    h1{
+        display: inline-flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        /* border: 1px solid blue; */
+        padding: 1em;
+        width: 90%;
+        font-size: 48px;
+
+        em{
+            text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    img{
+        margin: 1em;
+    }
+
+}
+
+
+
+/* Section 2 */
+#section-2{
+    /* border: 1px solid red; */
+    margin: 1em 0em;
+    padding: 0em 0em;
+
+    #view-more-btn-container{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1{
+        font-weight: bold;
+    }
+
+    .more-btn{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5em 1em;
+        margin-top: 1em;
+
+        p{
+            margin: 0em 0.5em;
+            font-weight: 700;
+        }
+
+    }
+    
+
+    .more-content {
+        /* border: 1px solid red; */
+        margin: 0em 0em 0em 0em;
+        padding: 1em 0em;
+
+        #fact-points{
+            /* border: 1px solid blue; */
+            padding: 1em 1em;
+            gap: 1em;
+        }
+    }
+
+    .more-content {
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.5s ease, opacity 0.5s ease;
+      }
+      
+      .more-content.show {
+        max-height: 1100px; /* Set to an appropriate max height */
+        opacity: 1;
+      }
+
+      #fact-points li span{
+        width: 100%;
+        margin: 1em 0em;
+      }
+      
+}
+
+/* Section 3 */
+#section-3{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+
+    h1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        /* border: 1px solid blue; */
+        padding: 1em;
+        width: 90%;
+        font-size: 48px;
+    }
+
+    img{
+        margin: 1em;
+    }
+
+}
+
+/* Section 3.1 */
+#section-3-1{
+    /* border: 1px solid red; */
+    margin: 1em 0em;
+    padding: 0em 0em;
+
+    #view-more-btn-container{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .more-btn{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5em 1em;
+        margin: 2em 0em;
+
+        p{
+            margin: 0em 0.5em;
+            font-weight: 700;
+        }
+
+    }
+    
+
+    .more-content {
+        /* border: 1px solid red; */
+        margin: 0em 0em 0em 0em;
+        padding: 0em 0em;
+    }
+
+    .more-content {
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.5s ease, opacity 0.5s ease;
+      }
+      
+      .more-content.show {
+        max-height: 1200px; /* Set to an appropriate max height */
+        opacity: 1;
+      }
+
+      #fact-points{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+
+        li{
+            /* border: 1px solid black; */
+            margin: 1em 0em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1{
+                /* border: 1px solid blue; */
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                margin: 0em 2em;
+                width: 100%;
+            }
+        }
+
+      }
+
+      #img-hero-second{
+        width: 100px;
+        height: auto;
+        border-radius: 8px;
+      }
+      
+}
+
+/* Section 4 */
+#section-4{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0em;
+
+    h1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        /* border: 1px solid blue; */
+        padding: 1em;
+        width: 90%;
+        font-size: 48px;
+    }
+
+    img{
+        margin: 1em;
+        
+    }
+
+    ul{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    ul li{
+        list-style-type: disc;
+    }
+
+    .scroll-container {
+        /* border: 1px solid red; */
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 16px; /* Adjust as needed */
+        padding: 16px;
+    }
+    
+    .scroll-container::-webkit-scrollbar {
+        display: none; /* Hides scrollbar on Webkit browsers */
+    }
+    
+    .scroll-container img {
+        width: 300px;
+        height: auto;
+        border-radius: 8px;
+        transition: 0.4s transform ease-in-out;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        flex-shrink: 0; /* Prevents images from shrinking */
+        scroll-snap-align:initial;
+    }
+    
+    /* Hover effect for images */
+    .scroll-container img:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    
+}
+
+/* Basic Footer Styling */
+footer {
+    background-color: #4258FF; /* Light background color */
+    padding: 0px 0 20px 0; /* Padding for spacing */
+    font-family: Arial, sans-serif;
+    background-image: url(./imgs/footer.jpeg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+
+    h1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        border: 1px solid red;
+        padding: 1em;
+        width: 100%;
+        font-size: 48px;
+    }
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap in smaller screens */
+    justify-content: space-between; /* Distribute space evenly */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between sections */
+    margin: 0em 0.5em;
+    padding: 1em;
+    border-radius: 8px;
+
+    top: 0;
+    left: 0;
+    width: 97%;
+    height: 100%;
+    backdrop-filter: blur(5px); /* Adjust the blur level as needed */
+    background-color: rgba(255, 255, 255, 0.179); /* Add opacity for a frosted glass effect */
+    z-index: 1;
+}
+
+/* Footer Sections */
+footer .footer-links section {
+    flex: 1 1 200px; /* Each section takes equal width on large screens, shrinks on smaller ones */
+    margin-bottom: 10px;
+    
+}
+
+footer .footer-links a {
+    display: flex; /* Make the icon and text inline */
+    align-items: center; /* Center align the icon and text */
+    color: #fff; /* Dark text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Default font size */
+    margin-bottom: 8px; /* Space between links */
+    /* border: 1px solid #fff; */
+    border-radius: 8px;
+    padding: 1em;
+}
+
+footer .footer-links a i {
+    margin-right: 8px; /* Space between the icon and text */
+    font-size: 20px; /* Adjust icon size */
+}
+
+/* Hover effect */
+footer .footer-links a:hover {
+    color: #e8eef1; /* Change text color on hover */
+    /* border: 1px solid #fff; */
+    padding: 0.5 1em;
+    background-color: #fff;
+    color: #4258FF;
+}
+
+footer .footer-links a:hover i {
+    color: #4258FF; /* Change icon color on hover */
+}
+
+.hr{
+    height: 300px; /* Set to full height of the container */
+    border-left: 1px solid #00D1B2; /* Add a left border to make the vertical line */
+}
+
+#footer-last{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    a{
+        margin: 1em 2em;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+.hidden{
+    opacity: 0;
+}
+
+@media (max-width: 992px) {
+    #img-hero{
+        width: 200px;
+        height: auto;
+    }
+
+    #section-1, #section-2, #section-3, #section-4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #section-1 h1{
+        font-size: 24px;
+    }
+
+    #section-3 h1{
+        font-size: 24px;
+    }
+
+    #section-4 h1{
+        font-size: 24px;
+    }
+
+    #section-4 ul{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin: 1em 0em;
+    }
+
+    #section-2 div{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            font-weight: bold;
+            text-align: center;
+        }
+    
+    }
+
+    #section-2{
+        .more-content {
+            /* border: 1px solid red; */
+            margin: 0em 0em 0em 0em;
+            padding: 1em 0em;
+    
+            #fact-points{
+                /* border: 1px solid blue; */
+                padding: 1em 0em;
+                gap: 1em;
+            }
+    }
+
+    #section-3-1 #fact-points li{
+        /* border: 1px solid red; */
+        padding: 1em 0.2em;
+        display: flex;
+        flex-direction: column;
+    }
+        h1{
+            margin: 0.5em 0em;
+        }
+    }
+
+    .svg-custom-star{
+        width: 60%; /* Adjust as needed */
+        height: auto; /* Keeps the SVG's aspect ratio */
+        max-width: 50px; /* Optional max-width to prevent it from getting too large */
+    }
+
+    .svg-custom {
+        width: 60%; /* Adjust as needed */
+        height: auto; /* Keeps the SVG's aspect ratio */
+        max-width: 100px; /* Optional max-width to prevent it from getting too large */
+      }
+
+    #more-btn{
+        padding: 0.5em 2em;
+        margin-top: 1em;
+    }
+    .scroll-container {
+        /* border: 1px solid red; */
+        padding: 16px; /* Adjust padding for smaller screens */
+    }
+
+    .scroll-container img {
+        width: 100%; /* Full width on mobile */
+        max-width: 100%; /* Prevents overflow */
+        border-radius: 6px; /* Slightly smaller border-radius */
+        transition: none; /* Disable transition on mobile */
+    }
+
+    .scroll-container img:hover {
+        transform: none; /* Disable hover zoom effect on mobile */
+    }
+
+    /* FOOTER */
+    footer h1{
+        font-size: 24px;
+    }
+    footer .footer-links {
+        flex-direction: column; /* Stack the sections vertically */
+        align-items: center; /* Center the sections */
+        gap: 15px; /* Space between sections */
+    }
+
+    footer .footer-links section {
+        flex: 1 1 auto; /* Allow sections to shrink and take full width */
+        text-align: center; /* Center the text in each section */
+        margin: 0;
+    }
+
+    footer .footer-links a {
+        font-size: 14px; /* Smaller font size for mobile */
+        justify-content: center; /* Center the link content */
+
+    }
+
+    footer .footer-links a i {
+        font-size: 24px; /* Larger icons on mobile */
+    }
+
+    /* Adjust section titles if present */
+    footer .footer-links section a {
+        margin-bottom: 12px; /* Add more space between links */
+    }
+
+    .hr{
+        height: 0px;
+        width: 300px;
+        border-top: 1px solid#00D1B2;
+    }
+}
+
